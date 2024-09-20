@@ -1,0 +1,40 @@
+# Bảo vệ file .htaccess
+<files .htaccess="">
+order allow,deny
+deny from all
+</files>
+
+RewriteEngine On
+
+# ErrorDocument 404$ public/404.php
+ErrorDocument 404 public/404.php
+
+
+RewriteRule ^Home$ index.php [L]
+
+# KNCMS AUTH
+
+RewriteRule ^VerifyAccount$ public/client/auth/active_account.php [L]
+RewriteRule ^Auth/Logout$ server/component/logout.php [L]
+RewriteRule ^Auth/Login$ server/component/login.php [L]
+RewriteRule ^Auth/Register$ server/component/register.php [L]
+RewriteRule ^Auth/ForgotPassword$ public/client/auth/quenmatkhau.php [L]
+
+
+RewriteRule ^Control$ server/admin/index.php [L]
+
+RewriteRule ^Control/ListHosting$ server/admin/component/listhosting.php [L]
+RewriteRule ^Control/ListUser$ server/admin/component/user.php [L]
+RewriteRule ^Control/EditUser$ server/admin/component/edituser.php [L]
+RewriteRule ^Control/PostHosting$ server/admin/component/host.php [L]
+RewriteRule ^Control/Domain$ server/admin/component/domain.php [L]
+RewriteRule ^Control/Voucher$ server/admin/component/voucher.php [L]
+RewriteRule ^Control/Login$ server/admin/login.php [L]
+
+RewriteRule ^Control/Setting$ server/admin/component/setting.php [L]
+
+RewriteRule ^User/NapTien$ server/component/page/user/naptien.php [L]
+RewriteRule ^User/NapCard$ server/component/page/user/napcard.php [L]
+
+RewriteRule ^API/NapTien$ api/naptien.php [L]
+RewriteRule ^API/NapCard$ api/napcard.php [L]

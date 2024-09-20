@@ -1,0 +1,54 @@
+# Bảo vệ file .htaccess
+<files .htaccess="">
+order allow,deny
+deny from all
+</files>
+
+RewriteEngine On
+
+# ErrorDocument 404$ public/404.php
+ErrorDocument 404 public/404.php
+
+
+RewriteRule ^Home$ index.php [L]
+
+# KNCMS AUTH
+
+RewriteRule ^VerifyAccount$ public/client/auth/active_account.php [L]
+RewriteRule ^Whois$ server/component/page/whois.php [L]
+RewriteRule ^Domain$ server/component/page/domain.php [L]
+RewriteRule ^Hosting$ server/component/page/hosting.php [L]
+RewriteRule ^MCHosting$ server/component/page/mc_hosting.php [L]
+RewriteRule ^Auth/Logout$ server/component/logout.php [L]
+RewriteRule ^Auth/Login$ server/component/login.php [L]
+RewriteRule ^Auth/Register$ server/component/register.php [L]
+RewriteRule ^Auth/ForgotPassword$ public/client/auth/quenmatkhau.php [L]
+
+
+RewriteRule ^Control$ server/admin/index.php [L]
+
+RewriteRule ^Control/ListHosting$ server/admin/component/listhosting.php [L]
+RewriteRule ^Control/ListUser$ server/admin/component/user.php [L]
+RewriteRule ^Control/EditUser$ server/admin/component/edituser.php [L]
+RewriteRule ^Control/PostHosting$ server/admin/component/host.php [L]
+RewriteRule ^Control/Domain$ server/admin/component/domain.php [L]
+RewriteRule ^Control/Voucher$ server/admin/component/voucher.php [L]
+RewriteRule ^Control/Login$ server/admin/login.php [L]
+
+RewriteRule ^Control/Setting$ server/admin/component/setting.php [L]
+
+RewriteRule ^Cart/Hosting/([A-Za-z0-9-_]+)$ server/component/page/cart/hosting.php?hid=$1 [L]
+RewriteRule ^Cart/Domain/([A-Za-z0-9-_]+)$ server/component/page/cart/domain.php?hid=$1 [L]
+RewriteRule ^Cart/MCHosting/([A-Za-z0-9-_]+)$ server/component/page/cart/mc_hosting.php?hid=$1 [L]
+
+RewriteRule ^User/Domain$ server/component/page/user/listdomain.php [L]
+RewriteRule ^User/Hosting$ server/component/page/user/listhosting.php [L]
+RewriteRule ^User/MCHosting$ server/component/page/user/list_mchosting.php [L]
+RewriteRule ^User/NapTien$ server/component/page/user/naptien.php [L]
+RewriteRule ^User/NapCard$ server/component/page/user/napcard.php [L]
+
+RewriteRule ^API/NapTien$ api/naptien.php [L]
+RewriteRule ^API/NapCard$ api/napcard.php [L]
+RewriteRule ^User/Manage/MCHosting/([A-Za-z0-9-_]+)$ server/component/page/user/manager_mc.php?hid=$1 [L]
+RewriteRule ^User/Manage/Hosting/([A-Za-z0-9-_]+)$ server/component/page/user/manager_hosting.php?hid=$1 [L]
+RewriteRule ^User/Hosting/Upgrade/([A-Za-z0-9-_]+)$ server/component/page/user/upgrade_hosting.php?hid=$1 [L]

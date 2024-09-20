@@ -1,0 +1,6 @@
+{
+    "require": {
+        "previewtechs/cpanel-whm-api": "dev-master",
+        "guzzlehttp/guzzle": "^6.5"
+    }
+}

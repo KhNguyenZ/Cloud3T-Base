@@ -1,0 +1,22 @@
+[
+    {
+      "color": "ff368418",
+      "maxonline": 1000,
+      "name": "RCRP #1",
+      "online": 1000,
+      "recommend": true,
+      "ip": "104.234.180.229",
+      "port": 7777,
+      "id": 1
+    },
+   {
+      "color": "30d5c8",
+      "maxonline": 1000,
+      "name": "RCRP #2",
+      "online": 841,
+      "recommend": true,
+      "ip": "45.119.215.45",
+      "port": 7777,
+      "id": 2
+    }
+]

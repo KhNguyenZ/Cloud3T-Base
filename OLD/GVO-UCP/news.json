@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "title": "Story Title 1",
+    "content": "Content of the first story",
+    "date": "2024-07-17",
+    "author": "Author 1",
+    "image_url": "http://example.com/image1.jpg"
+  },
+  {
+    "id": 2,
+    "title": "Story Title 2",
+    "content": "Content of the second story",
+    "date": "2024-07-16",
+    "author": "Author 2",
+    "image_url": "http://example.com/image2.jpg"
+  },
+  {
+    "id": 3,
+    "title": "Story Title 3",
+    "content": "Content of the third story",
+    "date": "2024-07-15",
+    "author": "Author 3",
+    "image_url": "http://example.com/image3.jpg"
+  }
+]
