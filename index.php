@@ -1,7 +1,11 @@
 <?php require_once('modules/config.php') ?>
 <?php require_once('server/component/page/head.php') ?>
 <?php require_once('server/component/page/nav.php') ?>
-
+<!-- 
+KNCMS 2023-2024
+Copyright 
+          Website Developer - Khôi Nguyên (https://facebook.com/KhNguyenDev.MazTech)
+-->
 <title><?= $setting['Title'] ?></title>
 <div id="kt_content_container" class="d-flex flex-column-fluid align-items-start container-xxl">
 	<div class="content flex-row-fluid" id="kt_content">

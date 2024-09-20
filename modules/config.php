@@ -1,5 +1,10 @@
-
+<!-- 
+KNCMS 2023-2024
+Copyright 
+          Website Developer - Khôi Nguyên (https://facebook.com/KhNguyenDev.MazTech)
+-->
 <?php
+
 date_default_timezone_set('Asia/Ho_Chi_Minh');
 $_SESSION['session_request'] = time();
 $time = date('Y-m-d h:i:z');
